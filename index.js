@@ -31,7 +31,6 @@ function getInputVal(id) {
 }
 
 function saveMessage(firstname, lastname) {
-    console.log(123);
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
         firstname: firstname,
