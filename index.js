@@ -25,12 +25,14 @@ function submitForm(e) {
     saveMessage(firstname, lastname);
 
     document.querySelector('.alert').style.display = 'block';
-
     setTimeout(function(){
         document.querySelector('.alert').style.display = 'none';
     },3000);
-}
 
+    document.getElementById("fname").innerHTML=firstname;
+    document.getElementById("lname").innerHTML=lastname;
+
+}
 
 function getInputVal(id) {
     return document.getElementById(id).value;
@@ -44,3 +46,5 @@ function saveMessage(firstname, lastname) {
     });
 
 }
+
+
