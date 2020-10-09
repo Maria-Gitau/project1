@@ -23,6 +23,12 @@ function submitForm(e) {
     var lastname = getInputVal('lastname');
 
     saveMessage(firstname, lastname);
+
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(function(){
+        document.querySelector('.alert').style.display = 'none';
+    },3000);
 }
 
 

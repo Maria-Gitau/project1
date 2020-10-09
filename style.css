@@ -66,3 +66,12 @@ input:focus {
     border: 1px solid #b12929;
     cursor: pointer;
 }
+
+.alert{
+    text-align: center;
+    padding: 10px;
+    background: aquamarine;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
